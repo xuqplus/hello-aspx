@@ -41,5 +41,12 @@ namespace hello_aspx.Controllers
             _logger.LogInformation("user=>{}, ", user);
             return user;
         }
+
+        // return a View
+        public IActionResult Update()
+        { 
+            return View();
+        }
+
     }
 }
