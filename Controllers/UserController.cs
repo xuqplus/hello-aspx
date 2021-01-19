@@ -31,5 +31,15 @@ namespace hello_aspx.Controllers
         {
             return "hello, this is UserController.Hello()";
         }
+
+        // GET /User/Add
+        // will be transfered to string automatically
+        public UserModel Add(long id, string name)
+        {
+            _logger.LogInformation("id=>{}, name=>{}, ", id, name);
+            UserModel user = new UserModel(id, name);
+            _logger.LogInformation("user=>{}, ", user);
+            return user;
+        }
     }
 }
