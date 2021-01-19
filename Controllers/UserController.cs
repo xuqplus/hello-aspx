@@ -47,6 +47,28 @@ namespace hello_aspx.Controllers
         { 
             return View();
         }
+        
+        // return a View
+        public IActionResult Delete()
+        {
+            ViewResult view = View(); // ViewResult - _ViewStart.cshtml will be inherited
+            _logger.LogInformation("view=============>");
+            _logger.LogInformation(view.ToString());
+            _logger.LogInformation(view.ViewName);
+            _logger.LogInformation(view.ViewData.ToString());
+            //_logger.loginformation(view.viewengine.tostring());
+            _logger.LogInformation("view=============>");
+
+            ViewData["title"] = "A标题A"; // case insensitive key
+            ViewData["Deleted"] = "yes";
+            return view;
+        }
+        
+        // return a View
+        public IActionResult Query()
+        {
+            return PartialView(); // PartialViewResult - _ViewStart.cshtml won't be inherited
+        }
 
     }
 }

@@ -8,6 +8,8 @@ dotnet watch run
 press down `ctrl` + `k` then press `f`
 ##### open terminal in vs
 `ctrl` + *`*
+##### commets/cancel comments
+`ctrl` + `k` + `c`/`ctrl` + `k` + `u`
 
 #### view current running web app
 View => Other Windows => Browser Link Dashboard
