@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_Layout"; // this whole page will be rendered in _Layout.cshtml => @RenderBody()
+}
+@{
+// Layout = ""; // result in no layout if not commet
+}
+
+@section Scripts { @* // @RenderSection("Scripts") will render these scripts *@
+<script type="text/javascript">console.log('section scripts');</script>
+<script src="~/js/test/b.js">console.log('section scripts');</script>
+}
+
+being reference ..
+<hr />
+
+@RenderBody()
+@RenderSection("ajs", required: false)

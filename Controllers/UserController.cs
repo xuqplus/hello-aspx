@@ -63,12 +63,17 @@ namespace hello_aspx.Controllers
             ViewData["Deleted"] = "yes";
             return view;
         }
-        
-        // return a View
+
+        // return a PartialView
         public IActionResult Query()
         {
             return PartialView(); // PartialViewResult - _ViewStart.cshtml won't be inherited
         }
 
+        //// try load js
+        public IActionResult Load()
+        {
+            return View();
+        }
     }
 }

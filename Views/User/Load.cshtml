@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "ToBeRef"; // this whole content will be rendered in ToBeRef.cshtml @RenderBody()
+}
+
+open console to see if "a.js" loaded here
+
+@*with or without a version*@
+<!-- with or without a version -->
+
+<script src="~/js/test/a.js" asp-append-version="true"></script>
+
+@section ajs {
+<script src="~/js/test/a.js"></script>
+}
