@@ -5,7 +5,8 @@ dotnet watch run
 
 #### short cuts
 ##### format source code 
-press down `ctrl` + `k` then press `f`
+all document: press down `ctrl` + `k` then press `d`  
+for selection: press down `ctrl` + `k` then press `f`
 ##### open terminal in vs
 `ctrl` + *`*
 ##### commets/cancel comments
