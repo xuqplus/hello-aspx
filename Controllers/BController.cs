@@ -10,7 +10,7 @@ namespace hello_aspx.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BController : ControllerBase
+    public class BController : Controller
     {
         // GET: api/<BController>
         [HttpGet]
@@ -43,5 +43,28 @@ namespace hello_aspx.Controllers
         public void Delete(int id)
         {
         }
+
+        // /api/b/ha
+        [Route("ha")]
+        public string Ha()
+        {
+            return "haha";
+        }
+
+        // /api/b/hi
+        [Route("hi")]
+        public IActionResult Hi()
+        {
+            return View();
+        }
+
+        // /api/b/hi2
+        [Route("hi2")]
+        public IActionResult Hi2()
+        {
+            return PartialView();
+        }
+
+
     }
 }

@@ -11,6 +11,8 @@ for selection: press down `ctrl` + `k` then press `f`
 `ctrl` + *`*
 ##### commets/cancel comments
 `ctrl` + `k` + `c`/`ctrl` + `k` + `u`
+##### upper case/lower case
+`ctrl` + `shift` + `u`/`ctrl` + `u`
 
 #### view current running web app
 View => Other Windows => Browser Link Dashboard
